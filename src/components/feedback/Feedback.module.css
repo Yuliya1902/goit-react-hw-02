@@ -1,0 +1,19 @@
+.stats {
+    display: flex;
+    gap: 7px;
+  }
+  
+  .item {
+    text-align: center;
+    border: none;
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: gray;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
