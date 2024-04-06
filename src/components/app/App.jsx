@@ -6,7 +6,8 @@ import Description from "../description/Description";
 import Options from "../options/Options";
 import Feedback from "../feedback/Feedback";
 import Notification from "../notification/Notification";
-import Chart1 from "../chat/Chat";
+import Container   from '../container/Container';
+import  Section  from '../section/Section';
 
 import './App.css'
 
@@ -39,6 +40,8 @@ const App = () => {
 
   return (
     <>
+    <Container />
+    <Section />
       <Description />
       <Options update={updateFeedback} totalFeedback={totalFeedback} />
       {totalFeedback > 0 ? (
@@ -48,12 +51,7 @@ const App = () => {
             totalFeedback={totalFeedback}
             positivePerc={positivePerc}
           />
-          <Chart1
-            good={values.good}
-            neutral={values.neutral}
-            bad={values.bad}
-            total={totalFeedback}
-          />
+          
         </div>
       ) : (
         <Notification />
